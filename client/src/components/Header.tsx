@@ -59,12 +59,7 @@ export function Header() {
             <Link
               key={link.name}
               href={link.href}
-              className={cn(
-                "text-sm font-medium transition-colors hover:text-primary relative py-1",
-                location === link.href 
-                  ? "text-primary font-semibold" 
-                  : isScrolled ? "text-foreground" : "text-foreground" // Kept foreground for readability on hero
-              )}
+              className="text-sm font-medium transition-colors hover:text-primary relative py-1 text-[#785f49]"
             >
               {link.name}
               {location === link.href && (
@@ -92,7 +87,6 @@ export function Header() {
           <Menu className="w-6 h-6" />
         </button>
       </div>
-
       {/* Mobile Menu Overlay */}
       <AnimatePresence>
         {isMobileMenuOpen && (
