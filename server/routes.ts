@@ -4,6 +4,7 @@ import { storage } from "./storage";
 import { insertLeadSchema } from "@shared/schema";
 import { api } from "@shared/routes";
 import { z } from "zod";
+import { sendAdminNotification, sendUserConfirmation } from "./email";
 
 export async function registerRoutes(
   httpServer: Server,
@@ -13,6 +14,15 @@ export async function registerRoutes(
     try {
       const data = api.leads.create.input.parse(req.body);
       const lead = await storage.createLead(data);
+      
+      // Send email notifications (don't block response)
+      Promise.all([
+        sendAdminNotification(data),
+        sendUserConfirmation(data),
+      ]).catch((err) => {
+        console.error("Email notification error:", err);
+      });
+      
       res.status(201).json(lead);
     } catch (error) {
       if (error instanceof z.ZodError) {
