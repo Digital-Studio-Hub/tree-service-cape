@@ -39,8 +39,8 @@ export default function Home() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/service-7.jpg"
-            alt="Professional Tree Felling in Cape Town" 
+            src="/images/hero.jpg"
+            alt="Professional Palm Tree Maintenance in Cape Town" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40 bg-gradient-to-b from-black/60 via-transparent to-black/60" />
