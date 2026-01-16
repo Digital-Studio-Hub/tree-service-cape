@@ -1,0 +1,135 @@
+PURPOSE
+A neutral, reusable footer suitable for corporate, informational, portfolio, nonprofit, or service websites. Emphasis on clarity, accessibility, trust, and maintainability.
+
+CONTENT STRUCTURE
+
+BRAND SUMMARY
+
+Logo (SVG preferred)
+
+One sentence description of the organization or website purpose
+
+Optional tagline
+
+NAVIGATION
+Organized into clear groups:
+
+Pages: Home, About, Services, Blog, Contact
+
+Resources: Help, FAQ, Documentation, Support
+
+Legal: Privacy Policy, Terms of Use, Cookie Policy
+
+CONTACT INFORMATION
+
+Email address
+
+Phone number (optional)
+
+City and country (no precise address unless required)
+
+SOCIAL LINKS
+
+Icons only (SVG)
+
+Open in new tab
+
+Accessible labels
+
+LEGAL & META
+
+Copyright notice with dynamic year
+
+Rights statement
+
+Optional disclaimer line
+
+ACCESSIBILITY & TECHNICAL REQUIREMENTS
+
+Semantic HTML5
+
+Keyboard navigable
+
+WCAG 2.1 AA contrast
+
+Mobile responsive
+
+No inline styles
+
+Lightweight and framework agnostic
+
+SAMPLE HTML STRUCTURE
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-container">
+    <section class="footer-brand">
+      <img src="/logo.svg" alt="Website Logo" class="footer-logo" />
+      <p class="footer-description">
+        A professional platform delivering reliable information and services.
+      </p>
+    </section>
+
+    <nav class="footer-nav" aria-label="Footer Navigation">
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/help">Help</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/support">Support</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Use</a></li>
+          <li><a href="/cookies">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="footer-contact">
+      <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+      <p>Location: City, Country</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+        <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener">IN</a>
+        <a href="#" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+      </div>
+    </section>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Company Name. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+DESIGN NOTES
+
+Use a grid or flex layout
+
+Limit width for readability
+
+Neutral color palette
+
+Clear spacing and hierarchy
+
+Consistent typography with main site
+
+This footer is suitable for static sites, CMS platforms, and modern frameworks without modification.

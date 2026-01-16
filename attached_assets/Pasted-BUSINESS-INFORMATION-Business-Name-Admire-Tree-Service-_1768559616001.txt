@@ -1,0 +1,204 @@
+BUSINESS INFORMATION
+Business Name: Admire Tree Service
+
+Domain: admiretreefellingservice.co.za
+
+Industry: Tree Felling & Tree Maintenance
+
+Location Target: Cape Town, South Africa
+
+WhatsApp / Cell: 067 290 3024
+
+Email: matizhaadmire6@gmail.com
+
+BUSINESS DESCRIPTION
+Admire Tree Service provides professional tree cutting, trimming, and tree maintenance services for residential and commercial clients in Cape Town.
+The business focuses on safe, efficient, and reliable tree work, helping clients maintain their properties and manage overgrown or dangerous trees.
+
+PRIMARY WEBSITE OBJECTIVES
+Generate local leads in Cape Town
+
+Encourage users to call or WhatsApp
+
+Clearly list tree services offered
+
+Build trust through visuals and simple messaging
+
+Avoid showing prices (quote-based service)
+
+DESIGN & UI/UX REQUIREMENTS
+Design Style
+Clean
+
+Natural
+
+Trustworthy
+
+Easy to navigate
+
+Mobile-first
+
+Colour Palette (MANDATORY)
+Green: Primary accent (nature, trees)
+
+White: Background and spacing
+
+Brown: Secondary accent (wood, earth)
+
+Avoid:
+
+Loud or artificial colours
+
+Overly complex layouts
+
+Heavy animations
+
+WEBSITE STRUCTURE (SITEMAP)
+/
+├── Home
+├── About Us
+├── Services
+│   ├── Tree Felling
+│   ├── Tree Trimming & Pruning
+│   ├── Tree Maintenance
+│   ├── Yard & Tree Cleanup
+├── Gallery
+├── Contact Us
+├── Privacy Policy
+
+PAGE CONTENT GUIDELINES
+HOME PAGE
+Hero Headline example:
+Professional Tree Felling & Tree Services in Cape Town
+
+Subtext:
+Safe, reliable tree cutting, trimming, and maintenance services for homes and businesses.
+
+Primary CTAs:
+
+WhatsApp Us
+
+Call Now
+
+Sections:
+
+Services overview
+
+Why choose Admire Tree Service
+
+Service area (Cape Town)
+
+Strong CTA banner
+
+ABOUT US
+Include:
+
+Brief introduction to the business
+
+Focus on safety, experience, and reliability
+
+Local Cape Town service emphasis
+
+SERVICES
+List services clearly with NO PRICES:
+
+Tree Felling
+
+Tree Trimming & Pruning
+
+Tree Maintenance
+
+Removal of unwanted or dangerous trees
+
+Yard and tree cleanup
+
+Each service section must include:
+
+Short description
+
+CTA: Request a Quote
+
+GALLERY
+Display before-and-after images
+
+Real service visuals (to be emailed)
+
+Clean grid layout
+
+Optimised images
+
+CONTACT US
+Must include:
+
+Contact form (email delivery)
+
+WhatsApp button
+
+Click-to-call phone number
+
+Service area mention (Cape Town)
+
+LEAD GENERATION FEATURES (MANDATORY)
+Floating WhatsApp button (067 290 3024)
+
+Click-to-call buttons
+
+Contact form routing to email
+
+“Request a Quote” CTAs throughout
+
+No pricing displayed anywhere
+
+IMAGES & MEDIA
+Real service images (tree cutting, trimming, cleanup)
+
+Nature-related visuals
+
+Optimised WebP images
+
+Lazy loading
+
+Consistent natural tone
+
+SEO & SCHEMA
+SEO
+Local SEO focus: “Tree Felling Cape Town”, “Tree Cutting Services Cape Town”
+
+Optimised meta titles & descriptions
+
+Clean URLs
+
+Image alt text with service keywords
+
+Schema (JSON-LD)
+Organization
+
+LocalBusiness
+
+Service schema
+
+TECHNICAL REQUIREMENTS
+Mobile-first responsive design
+
+Fast load speed (<1.5s)
+
+HTTPS + SSL
+
+Simple CMS for updates
+
+Clean, maintainable code
+
+Contact form validation
+
+FINAL DELIVERABLE
+Fully responsive lead-generation website
+
+Natural green/white/brown design
+
+WhatsApp + call-driven enquiries
+
+No pricing displayed
+
+Optimised for Cape Town searches
+
+Easy-to-use and future-ready
