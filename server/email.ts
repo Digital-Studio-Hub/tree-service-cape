@@ -1,3 +1,5 @@
+import { Inbound } from "inboundemail";
+
 interface EmailOptions {
   to: string;
   toName?: string;
@@ -14,56 +16,35 @@ interface LeadNotificationData {
   message: string;
 }
 
-const ZEPTOMAIL_API_URL = "https://api.zeptomail.com/v1.1/email";
+const apiKey = process.env.INBOUND_API_KEY || "";
+
+if (!apiKey) {
+  console.warn("INBOUND_API_KEY not found — emails will not be sent");
+}
+
+const client = apiKey ? new Inbound({ apiKey }) : null;
+
 const ADMIN_EMAIL = "matizhaadmire6@gmail.com";
-const FROM_EMAIL = "noreply@admiretreefellingservice.co.za";
-const FROM_NAME = "Admire Tree Service";
+const FROM_EMAIL = "Cledwyn from Lekker Network <cledwyn@lekker.network>";
 
 export async function sendEmail(options: EmailOptions): Promise<boolean> {
-  const token = process.env.ZEPTOMAIL_TOKEN;
-  
-  if (!token) {
-    console.error("ZEPTOMAIL_TOKEN is not configured");
+  if (!client) {
+    console.error("Cannot send email: INBOUND_API_KEY is not configured");
     return false;
   }
 
   try {
-    const response = await fetch(ZEPTOMAIL_API_URL, {
-      method: "POST",
-      headers: {
-        "Accept": "application/json",
-        "Content-Type": "application/json",
-        "Authorization": token,
-      },
-      body: JSON.stringify({
-        from: {
-          address: FROM_EMAIL,
-          name: FROM_NAME,
-        },
-        to: [
-          {
-            email_address: {
-              address: options.to,
-              name: options.toName || options.to,
-            },
-          },
-        ],
-        subject: options.subject,
-        htmlbody: options.htmlBody,
-        textbody: options.textBody || options.htmlBody.replace(/<[^>]*>/g, ""),
-      }),
+    await client.emails.send({
+      from: FROM_EMAIL,
+      to: options.to,
+      subject: options.subject,
+      html: options.htmlBody,
     });
-
-    if (!response.ok) {
-      const errorData = await response.text();
-      console.error("ZeptoMail API error:", response.status, errorData);
-      return false;
-    }
 
     console.log("Email sent successfully to:", options.to);
     return true;
   } catch (error) {
-    console.error("Failed to send email:", error);
+    console.error("Failed to send email via inbound.new:", error);
     return false;
   }
 }
